@@ -46,12 +46,20 @@ public class MainActivity extends AppCompatActivity {
     }
         private void Maior(){
             MaiorSomaImpar maior = new MaiorSomaImpar();
-            textoMaior.setText(maior.Maior(Integer.parseInt(etNumPrimeiro.getText().toString())
-                    ,Integer.parseInt(etNumSegundo.getText().toString())));
+            textoMaior.setText(String.valueOf(
+                    maior.Maior(
+                            Integer.parseInt(etNumPrimeiro.getText().toString()),
+                            Integer.parseInt(etNumSegundo.getText().toString())
+                    )
+            ));
     }
         private void SomaImpar(){
             MaiorSomaImpar soma_impar = new MaiorSomaImpar();
-            textoSoma.setText(soma_impar.SomaImpar(Integer.parseInt(etNumPrimeiro.getText().toString())
-                    ,Integer.parseInt(etNumSegundo.getText().toString())));
+            textoSoma.setText(String.valueOf(
+                    soma_impar.SomaImpar(
+                            Integer.parseInt(etNumPrimeiro.getText().toString()),
+                            Integer.parseInt(etNumSegundo.getText().toString())
+                    )
+            ));
         }
 }
