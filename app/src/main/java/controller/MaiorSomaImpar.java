@@ -1,6 +1,6 @@
 package controller;
 
-public class MaiorSomaImpar {
+public class MaiorSomaImpar  {
 
     public int Maior(int PrimeiroNum, int SegundoNum) {
         if (PrimeiroNum > SegundoNum){
